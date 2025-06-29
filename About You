@@ -87,5 +87,7 @@ Lena.
   </audio>
 </body>
 </html>
-
+<div style="text-align:center; margin-top: 2em;">
+  <a href="index.html" style="text-decoration:none; color:#4b2e2e;">⬅️ Kembali ke Beranda</a>
+</div>
 
