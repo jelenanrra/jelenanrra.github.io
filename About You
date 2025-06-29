@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untuk Lorenzo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffe6e6, #fff5f0);
+      font-family: 'Georgia', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #4b2e2e;
+      overflow: hidden;
+    }
+    .container {
+      max-width: 600px;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    .text {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      white-space: pre-wrap;
+      border-right: .15em solid #4b2e2e;
+      overflow: hidden;
+      width: 0;
+      animation: typing 12s steps(100, end) forwards, blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #4b2e2e; }
+    }
+
+    .signature {
+      text-align: right;
+      font-style: italic;
+      margin-top: 2em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+Namanya Lorenzo.
+Aku bertemu dia tepat di musim semi.
+Saat itu, daun-daun berjatuhan—
+sama seperti hatiku yang sedang jatuh.
+
+Kamu bilang: "Aku suka kamu."
+Bukan karena fisik aku,
+bukan karena materi,
+tapi, katanya, sifat aku bikin kamu meleleh.
+Katanya, hatimu menghangat.
+
+Tapi aku tahu,
+itu bukan cinta yang berkepanjangan,
+bukan yang sehidup semati,
+tapi cinta singkat,
+yang memenuhi masa remaja kita.
+
+Tapi karena itu,
+aku memutuskan:
+mencintaimu—
+sepanjang hidupku.
+
+
+Dari aku, mantan kekasihmu—
+Lena.
+    </div>
+  </div>
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2023/03/23/audio_91293430e4.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
+
+
