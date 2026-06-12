@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>20</title><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Patrick+Hand&display=swap" rel="stylesheet"><style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#040714;
+overflow:hidden;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:'Cormorant Garamond',serif;
+color:white;
+}
+
+/* Nebula */
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at 20% 20%, rgba(255,150,255,.25), transparent 25%),
+radial-gradient(circle at 80% 30%, rgba(100,180,255,.25), transparent 25%),
+radial-gradient(circle at 50% 80%, rgba(255,255,180,.12), transparent 20%);
+animation:nebula 18s ease-in-out infinite alternate;
+}
+
+@keyframes nebula{
+from{transform:scale(1);}
+to{transform:scale(1.08);}
+}
+
+/* Stars */
+.stars{
+position:fixed;
+inset:0;
+background-image:
+radial-gradient(white 1px, transparent 1px);
+background-size:50px 50px;
+animation:twinkle 4s infinite;
+}
+
+@keyframes twinkle{
+50%{opacity:.5;}
+}
+
+/* Moon */
+.moon{
+position:absolute;
+top:40px;
+left:50px;
+font-size:5rem;
+animation:floatMoon 5s ease-in-out infinite;
+}
+
+@keyframes floatMoon{
+50%{
+transform:translateY(-10px);
+}
+}
+
+/* Planet */
+.planet{
+position:absolute;
+top:70px;
+right:70px;
+width:170px;
+height:170px;
+border-radius:50%;
+background:
+linear-gradient(135deg,#ffc7ff,#9fd8ff);
+box-shadow:0 0 80px rgba(255,255,255,.2);
+}
+
+/* Card */
+.card{
+position:relative;
+z-index:10;
+padding:45px;
+width:min(90%,750px);
+border-radius:35px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.12);
+}
+
+h1{
+text-align:center;
+font-family:'Patrick Hand',cursive;
+font-size:4rem;
+margin-bottom:20px;
+color:#ffd6ff;
+}
+
+.poem{
+white-space:pre-line;
+text-align:center;
+line-height:1.08;
+font-size:1.28rem;
+}
+
+/* Music label */
+.music{
+position:fixed;
+bottom:15px;
+left:15px;
+font-size:.85rem;
+opacity:.7;
+}
+
+</style></head><body><div class="stars"></div><div class="moon">🌙</div><div class="planet"></div><div class="card"><h1>20</h1><div class="poem">Flying about the cosmos,
+'Twas not the sun that did greet me.
+I had arrived in Nirvana,
+Where heavenly maidens do speak.
+I sat upon the edge of Sirius' atmosphere,
+To burn mine ego.
+Now Nirvana hath vanished,
+For mine ego was burned.
+Who would have thought I could not endure?
+To pass through the nebula is no difficult thing,
+'Tis mine ego that doth blaze.
+I burn it.
+It doth not vanish,
+But—
+It burneth ever more fiercely.</div></div><div class="music">
+🎵 Put music.mp3 in the same folder
+</div><audio autoplay loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio></body>
+</html>
