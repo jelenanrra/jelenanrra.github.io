@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>20</title><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet"><style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:
+linear-gradient(
+180deg,
+#17152f 0%,
+#23204d 30%,
+#3a2c66 60%,
+#5a4f85 100%
+);
+min-height:100vh;
+overflow-x:hidden;
+font-family:'Cormorant Garamond',serif;
+color:white;
+padding:60px 20px;
+}
+
+/* Nebula */
+
+.nebula{
+position:fixed;
+inset:0;
+pointer-events:none;
+background:
+radial-gradient(circle at 20% 20%, rgba(255,180,255,.18), transparent 30%),
+radial-gradient(circle at 80% 30%, rgba(170,220,255,.18), transparent 30%),
+radial-gradient(circle at 50% 80%, rgba(255,240,180,.12), transparent 25%);
+animation:floatNebula 18s ease-in-out infinite alternate;
+}
+
+@keyframes floatNebula{
+from{
+transform:scale(1);
+}
+to{
+transform:scale(1.08);
+}
+}
+
+/* Stars */
+
+.stars{
+position:fixed;
+inset:0;
+pointer-events:none;
+background-image:
+radial-gradient(white 1px, transparent 1px);
+background-size:40px 40px;
+animation:twinkle 5s infinite;
+}
+
+@keyframes twinkle{
+50%{
+opacity:.4;
+}
+}
+
+/* Moon */
+
+.moon{
+position:fixed;
+top:40px;
+left:40px;
+font-size:4rem;
+animation:moonFloat 6s ease-in-out infinite;
+}
+
+@keyframes moonFloat{
+50%{
+transform:translateY(-12px);
+}
+}
+
+/* Planet */
+
+.planet{
+position:fixed;
+top:70px;
+right:60px;
+font-size:5rem;
+animation:planetFloat 8s ease-in-out infinite;
+}
+
+@keyframes planetFloat{
+50%{
+transform:translateY(10px);
+}
+}
+
+/* Meteor */
+
+.meteor{
+position:fixed;
+top:-50px;
+left:-100px;
+font-size:2rem;
+animation:meteor 10s linear infinite;
+}
+
+@keyframes meteor{
+0%{
+transform:translate(0,0);
+opacity:0;
+}
+10%{
+opacity:1;
+}
+100%{
+transform:translate(1400px,700px);
+opacity:0;
+}
+}
+
+/* Content */
+
+.container{
+max-width:700px;
+margin:auto;
+position:relative;
+z-index:10;
+}
+
+.title{
+text-align:center;
+font-size:2.6rem;
+font-weight:500;
+margin-bottom:30px;
+color:#fce7ff;
+}
+
+.poem{
+font-family:'Cormorant Garamond',serif;
+font-size:1.25rem;
+line-height:1.25;
+white-space:pre;
+display:block;
+margin:auto;
+width:max-content;
+color:#fffdfd;
+}
+
+.author{
+margin-top:20px;
+text-align:right;
+font-size:1rem;
+font-style:italic;
+color:#ffdff5;
+}
+
+/* Music */
+
+.music{
+margin-top:40px;
+text-align:center;
+}
+
+.music p{
+margin-bottom:10px;
+color:#f2ddff;
+}
+
+audio{
+width:100%;
+max-width:320px;
+}
+
+</style></head><body><div class="nebula"></div>
+<div class="stars"></div><div class="moon">🌙</div>
+<div class="planet">🪐</div>
+<div class="meteor">☄️</div><div class="container"><h1 class="title">20</h1><pre class="poem">Flying about the cosmos,
+'Twas not the sun that did greet me.
+I had arrived in Nirvana,
+Where heavenly maidens do speak.
+I sat upon the edge of Sirius' atmosphere,
+To burn mine ego.
+Now Nirvana hath vanished,
+For mine ego was burned.
+Who would have thought I could not endure?
+To pass through the nebula is no difficult thing,
+'Tis mine ego that doth blaze.
+I burn it.
+It doth not vanish,
+But—
+It burneth ever more fiercely.</pre><div class="author">
+— Rahma
+</div><div class="music">
+<p>♫ Cosmic Ambience ♫</p><audio controls>
+<source src="music.mp3" type="audio/mpeg">
+</audio></div></div></body>
+</html>
